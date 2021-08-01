@@ -1,0 +1,13 @@
+[package]
+name = "z0ne-common"
+version = "0.1.0"
+authors = ["Kura <me@kurabloodlust.eu>"]
+edition = "2018"
+
+[dependencies]
+tracing-subscriber = "0.2.15"
+tracing-appender = "0.1.2"
+log = "0.4.11"
+tracing = "0.1.23"
+snafu = "0.6.10"
+dotenv = "0.15.0"
