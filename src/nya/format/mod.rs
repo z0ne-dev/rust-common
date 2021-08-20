@@ -2,11 +2,11 @@
 pub use miau::format::*;
 
 #[cfg(feature = "hocon")]
-pub mod hocon;
+mod hocon;
 #[cfg(feature = "hjson")]
-pub mod hjson;
+mod hjson;
 #[cfg(feature = "dhall")]
-pub mod dhall;
+mod dhall;
 
 #[cfg(feature = "hocon")]
 pub fn hocon() -> hocon::Hocon {
