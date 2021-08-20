@@ -1,5 +1,5 @@
 [package]
-name = "z0ne-common"
+name = "z0ne"
 version = "0.1.0"
 authors = ["Kura <me@kurabloodlust.eu>"]
 edition = "2018"
