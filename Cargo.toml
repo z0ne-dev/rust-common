@@ -5,30 +5,9 @@ authors = ["Kura <me@kurabloodlust.eu>"]
 edition = "2018"
 
 [dependencies]
-# logging
 tracing-subscriber = "0.2"
 tracing-appender = "0.1"
 tracing = "0.1"
 log = "0.4"
-
 snafu = "0.6"
-
-# config
-clap = "2.6"
 dotenv = "0.15"
-hocon-crate = { package="hocon", version = "0.5", optional = true }
-deser-hjson = { version = "1.0", optional = true }
-serde_dhall = { version = "0.10", optional = true }
-miau = { version = "0.1" }
-
-[features]
-all-formats = ["ini", "json", "msgpack", "json5", "toml", "yaml", "hocon", "hjson", "dhall"]
-ini = ["miau/ini"]
-json = ["miau/json"]
-msgpack = ["miau/msgpack"]
-json5 = ["miau/serde_json5"]
-toml = ["miau/serde_toml"]
-yaml = ["miau/yaml"]
-hocon = ["hocon-crate"]
-hjson = ["deser-hjson"]
-dhall = ["serde_dhall"]
